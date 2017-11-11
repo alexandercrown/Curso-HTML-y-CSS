@@ -1,0 +1,36 @@
+body{
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    margin-left: 110px;
+    margin-right: 120px;
+}
+.table-of-contents{
+    width: 23%;
+    margin-right: 30px;
+    border: 1px solid #95a5a6;
+    padding-left: 10px;
+    position: left;
+}
+.image{
+    width: 73%;
+    overflow: visible;
+    margin-left: 18px;
+    margin-bottom:5px;
+    float: right;
+    font-size: 14px;
+    font-style: italic;
+}
+.image img{
+    height: 380px;
+    width: 100%;   
+}
+a:link,
+a:active,
+a:visited,
+a:hover{
+    color: #2980b9;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
