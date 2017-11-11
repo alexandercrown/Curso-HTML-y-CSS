@@ -1,0 +1,75 @@
+body{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.tabla-de-precios,
+.galeria-fotografica,
+.chat{
+    display: flex;
+    border: 5px solid brown;
+    background-color: lightyellow;
+    width: 70%;
+    margin: 10px 0 10px 0;
+}
+.tabla-de-precios{
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.tabla-de-precios div{
+    height: 85%;
+    border: 5px solid blue;
+    background-color: lightblue;
+    width: 100%;
+}
+.tabla-de-precios div:first-child{
+    margin: 0 0 0 10px;
+}
+.tabla-de-precios div:last-child{
+    margin: 0 10px 0 0;
+}
+.popular{
+    height: 90% !important;
+    width: 100%;
+    border: 5px solid red !important;
+    background-color: lightpink !important;
+}
+.galeria-fotografica{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.galeria-fotografica div{
+    height: 300px;
+    width: 50%;
+    border: 5px solid blue;
+    background-color: lightblue;
+    margin: 15px;
+}
+.galeria-fotografica div:first-child{
+    margin-top: 20px;
+}
+.galeria-fotografica div:not(.destacado){
+    flex: 1;
+}
+.destacado{
+    width: 100% !important;
+}
+.chat{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    height: 500px;
+    justify-content: flex-start;
+}
+.chat div{
+    height: 15%;
+    width: 60%;
+    border: 5px solid blue;
+    background-color: lightblue;
+    margin: 10px;
+}
+.chat .otro-usuario{
+    border: 5px solid red !important;
+    background-color: lightpink !important;
+    align-self: flex-end !important;
+}
