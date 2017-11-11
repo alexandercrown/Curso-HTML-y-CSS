@@ -1,0 +1,49 @@
+body{
+    font-family: Tahoma;
+}
+div{
+    border: 5px solid darkred;
+    background-color: lightyellow;
+}
+h1{
+    padding: 15px;
+    border: 5px solid darkblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: darkblue;
+    background-color: lightblue;
+}
+h2{
+    padding: 15px;
+    border: 5px solid darkgreen;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: darkred;
+    background-color: lightgreen;
+}
+h3{
+    padding: 15px;
+    border: 5px solid darkblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: darkblue;
+    background-color: lightblue;
+}
+h4{
+    border: 5px solid darkgreen;
+    margin: 20px;
+    color: darkred;
+    background-color: lightgreen;
+}
+h5{
+    border: 5px solid darkblue;
+    margin: 20px;
+    color: darkblue;
+    background-color: lightblue;
+}
+h6{
+    border: 5px solid darkgreen;
+    margin: 20px;
+    color: darkred;
+    background-color: lightgreen;
+}
