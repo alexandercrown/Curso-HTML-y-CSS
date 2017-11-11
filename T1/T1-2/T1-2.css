@@ -1,0 +1,35 @@
+body{
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    margin-left: 110px;
+    margin-right: 120px;
+}
+.image{
+    width: 73%;
+    overflow: visible;
+    margin-left: 20px;
+    margin-bottom:5px;
+    float: right;
+}
+.image img{
+    height: 380px;
+    width: 100%;
+}
+.image p{
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+}
+a:link,
+a:active,
+a:visited,
+a:hover{
+    color: royalblue;
+    text-decoration: none;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    text-decoration: underline;
+}
