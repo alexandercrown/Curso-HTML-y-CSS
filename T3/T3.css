@@ -1,0 +1,182 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Tahoma;
+    background-image: url("Assets/Bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+.main-container,
+.main-container>*{
+    display: flex;
+}
+.main-container{
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+header{
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+header .company-name{
+    margin-left: 25px;
+    font-size: 200%;
+}
+header .menu{
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+}
+header .menu li{
+    margin: 10px;
+    padding: 10px;
+}
+section{
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgba(243, 240, 240, 0.75);
+    padding: 20px 40px;
+}
+.catchy-section{
+    min-height: 100vh;
+    justify-content: center;
+    background-color: rgba(243, 240, 240, 0);
+}
+header,
+header a:link,
+.catchy-section,
+.catchy-section a:link,
+a:link.buy-button{
+    color: white;
+}
+header h1,
+.catchy-section h1,
+.catchy-section h2{
+    font-weight: normal;
+    text-align: center;
+}
+.catchy-section h1{
+    margin: 0;
+    font-size: 400%;
+}
+.catchy-section h2{
+    font-size: 200%;
+}
+.call-to-action,
+.buy-button{
+    background-color: rgb(81, 108, 243);
+    margin: 20px;
+    padding: 20px 40px;
+}
+.call-to-action:hover,
+.buy-button:hover{
+    background-color: rgb(46, 89, 209);
+    text-decoration: none;
+}
+section h1{
+    font-size: 200%;
+}
+.features-section>p{
+    max-width: 50%;
+    margin-bottom: 50px;
+}
+.features-section>hr{
+    border-color: rgb(0, 102, 255);
+    width: 100px;
+}
+.features-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.features-container>div{
+    margin: 20px;
+    width: 25%;
+}
+.features-container h2{
+    text-align: center;
+}
+.features-container p{
+    text-align: justify;
+}
+.gallery-section{
+    background-color: rgb(243, 240, 240);
+}
+.gallery-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.gallery-container>div{
+    margin: 20px;
+}
+.pricing-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.pricing-container>div{
+    margin: 40px;
+}
+.pricing-container h2{
+    margin-top: 0;
+}
+.pricing-container ul{
+    list-style: none;
+    padding: 0 0 0 20px;
+}
+.pricing-container li::before{
+    content: "✔ ";
+    color: green;
+}
+.pricing-container li.missing::before{
+    content: "✘ ";
+    color: red;
+}
+.pricing-container ul{
+    margin-bottom: 40px;
+}
+.buy-button{
+    padding: 20px;
+    font-size: 80%;
+}
+footer{
+    background-color: rgb(81, 98, 119);
+    flex-flow: column nowrap;
+    align-items: center;
+    color: white;
+    padding: 40px 0;
+}
+
+/* Móvil */
+@media screen and (max-width: 640px){
+    .gallery-container img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .features-container{
+        flex-flow: column nowrap;
+    }
+    .features-container>div,
+    .features-section>p{
+        width: 100%;
+        max-width: 640px;
+    }
+}
